@@ -6,10 +6,17 @@
 
 该仓库主要是对Minimum Snap算法进行实现。
 
-具有以下功能：
+**具有以下功能：**
 
 - 可以通过Rviz选择空间点，然后自动生成光滑的多项式曲线；
 - 具有前端轨迹搜索，到后端光滑轨迹生成功能。
+
+**功能包介绍：**
+
+- map_generator：主要用来生成随机的地图
+- path_searcher：用于路径搜索，目前只实现了A star
+- trajectory_generator：用于配合path_searcher生成二维Minimum Snap的轨迹
+- waypoint_trajectory_generator：通过Rviz插件生成三维的Minimum Snap轨迹
 
 ## 2. 编译
 
@@ -45,3 +52,5 @@ roslaunch trajectory_generator run_minimum_snap_2d.launch
 使用方法：点击Rviz中的`2D Pose Estimate`，然后鼠标左键点击地图的任意位置，将会生成光滑的轨迹。
 
 ![A_star+minimum_snap](doc/A_star+minimum_snap.gif)
+
+> 致谢：在学习路径规划的过程中，浙江大学的高飞老师给了我很多的帮助，其中也参考了他的不少代码和课件，在此向他提出感谢！
