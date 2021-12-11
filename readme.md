@@ -19,6 +19,7 @@
 - waypoint_trajectory_generator：通过Rviz插件生成三维的Minimum Snap轨迹
 
 ## 2. 编译
+我的开发环境为：`Ubuntu 18.04`、`Ros melodic`
 
 ```shell
 cd Minimum-Snap/
