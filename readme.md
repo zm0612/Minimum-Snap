@@ -31,7 +31,7 @@ catkin_make -j8
 **通过Rviz生成轨迹**
 
 ```shell
-source devel/setup.zsh
+source devel/setup.bash
 roslaunch waypoint_trajectory_generator test.launch
 ```
 
@@ -46,7 +46,7 @@ roslaunch waypoint_trajectory_generator test.launch
 为了更加接近实际工程使用，帮助大家去更深入了解，我实现了一个比较完整的仿真实验环境，它具有随机二维地图生成功能，前端A star路径搜索功能，后端Minimum Snap轨迹生成。
 
 ```shell
-source devel/setup.zsh
+source devel/setup.bash
 roslaunch trajectory_generator run_minimum_snap_2d.launch
 ```
 
