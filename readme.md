@@ -54,4 +54,6 @@ roslaunch trajectory_generator run_minimum_snap_2d.launch
 
 ![A_star+minimum_snap](doc/A_star+minimum_snap.gif)
 
+> 有同学反应在使用rviz显示时出现rviz卡死的现象，在我的开发环境中也有发现此问题，主要是NVIDIA驱动的原因，建议关闭独立显卡驱动，使用集成显卡显示rviz，即可正常运行。
+
 > 致谢：在学习路径规划的过程中，浙江大学的高飞老师给了我很多的帮助，其中也参考了他的不少代码和课件，在此向他提出感谢！
