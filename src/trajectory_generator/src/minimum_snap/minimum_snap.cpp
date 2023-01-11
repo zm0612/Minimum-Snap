@@ -20,7 +20,7 @@ VecXd MinimumSnap::AllocateTime(const MatXd &waypoint) const {
         if (delta_dist > dist_threshold_1) {
             segment_t = t * 2 + (delta_dist - dist_threshold_1) / max_vel_;
         } else {
-            segment_t = std::sqrt(delta_dist / max_accel_);
+            segment_t = 2*std::sqrt(delta_dist / max_accel_);
         }
 
         times[i - 1] = segment_t;
